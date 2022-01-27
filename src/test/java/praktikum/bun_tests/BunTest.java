@@ -1,8 +1,8 @@
 package praktikum.bun_tests;
 
-import jdk.jfr.Name;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import praktikum.Bun;
 
 import static org.junit.Assert.assertEquals;
@@ -16,13 +16,13 @@ public class BunTest {
     }
 
     @Test
-    @Name("Проверка метода getName")
+    @DisplayName("Проверка метода getName")
     public void bunGetNameTest() {
         assertEquals("Булка", bun.getName());
     }
 
     @Test
-    @Name("Проверка метода getPrice")
+    @DisplayName("Проверка метода getPrice")
     public void bunGetPriceTest() {
         assertEquals(60, bun.getPrice(), 0);
     }

@@ -1,8 +1,7 @@
 package praktikum.burger_tests;
-
-import jdk.jfr.Name;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import praktikum.Bun;
@@ -45,7 +44,7 @@ public class BurgerGetPriceTest {
     }
 
     @Test
-    @Name("Позитивная проверка метода getPrice")
+    @DisplayName("Позитивная проверка метода getPrice")
     public void burgerGetPriceTest() {
         Burger burger = new Burger();
         for (int i = 0; i < numberOfIngredients; i++) {

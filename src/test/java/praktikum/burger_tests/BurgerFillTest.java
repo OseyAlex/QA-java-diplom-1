@@ -1,8 +1,8 @@
 package praktikum.burger_tests;
 
-import jdk.jfr.Name;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import praktikum.Bun;
 import praktikum.Burger;
 import praktikum.Ingredient;
@@ -28,7 +28,7 @@ public class BurgerFillTest {
     }
 
     @Test
-    @Name("Проверка метода addIngredient")
+    @DisplayName("Проверка метода addIngredient")
     public void addIngredientTest() {
         burger.addIngredient(ingredients.get(0));
 
@@ -38,7 +38,7 @@ public class BurgerFillTest {
     }
 
     @Test
-    @Name("Проверка метода setBuns")
+    @DisplayName("Проверка метода setBuns")
     public void setBunsTest() {
         burger.setBuns(buns.get(0));
 
@@ -47,7 +47,7 @@ public class BurgerFillTest {
     }
 
     @Test
-    @Name("Проверка удаления ингредиента removeIngredient")
+    @DisplayName("Проверка удаления ингредиента removeIngredient")
     public void removeIngredientTest() {
         burger.addIngredient(ingredients.get(0));
         burger.removeIngredient(0);
@@ -56,7 +56,7 @@ public class BurgerFillTest {
     }
 
     @Test
-    @Name("Проверка перемещения ингредиента moveIngredient")
+    @DisplayName("Проверка перемещения ингредиента moveIngredient")
     public void moveIngredientTest() {
         burger.addIngredient(ingredients.get(0));
         burger.addIngredient(ingredients.get(1));

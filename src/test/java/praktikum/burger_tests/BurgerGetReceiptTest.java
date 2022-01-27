@@ -1,8 +1,8 @@
 package praktikum.burger_tests;
 
-import jdk.jfr.Name;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -32,7 +32,7 @@ public class BurgerGetReceiptTest {
 
 
     @Test
-    @Name("Проверка метода getReceipt")
+    @DisplayName("Проверка метода getReceipt")
     public void checkGetReceiptTestTest() {
 
         Mockito.when(bun.getName()).thenReturn("Булка");
